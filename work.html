@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="work.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>FORM IN JS</title>
+</head>
+<body>
+  
+    <form  class="form-container" onsubmit=" return validate()">
+        <h3>Login</h3>
+        <h2 id="error"></h2>
+        <div class="form-grp">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="user" placeholder="Username">
+            <i class="fa fa-times u_times"></i>
+            <i class="fa fa-check u_check"></i>
+        </div><br>
+
+        <div class="form-grp">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <i class="fa fa-times e_times"></i>
+            <i class="fa fa-check e_check"></i>
+        </div><br>
+
+
+        <div class="form-grp">
+            <label for="password">Username</label>
+            <input type="text" name="password" id="pass" placeholder="Password">
+            <i class="fa fa-times p_times"></i>
+            <i class="fa fa-check p_check"></i>
+        </div><br>
+
+        <div class="form-grp">
+            <input type="submit" name="login-btn" id="sweetalert" value="Login" >
+        </div>
+    </form>
+    <script src="./works.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+   
+</body>
+
+</html>
